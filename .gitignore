@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# Model weights and caches
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+models--*/
+checkpoints/
+cache/
+
+# Generated outputs / data
+outputs/
+system/outputs/
+evaluation/results*.csv
+evaluation/*.errors.log
+evaluation/images/
+evaluation/descriptions.csv
+*.zip

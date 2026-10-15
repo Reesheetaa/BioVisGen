@@ -1,0 +1,13 @@
+torch
+transformers
+diffusers>=0.30.0
+accelerate
+peft
+gradio>=4.0
+pillow
+open_clip_torch
+scikit-learn
+numpy
+sentencepiece
+protobuf
+easyocr
