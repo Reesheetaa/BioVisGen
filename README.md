@@ -95,7 +95,7 @@ export BIOVISGEN_DEVICE=cuda
 | `NUM_STEPS` | 50 | Diffusion inference steps |
 | `GUIDANCE_SCALE` / `IMAGE_GUIDANCE_SCALE` | 8.5 / 2.0 | Text guidance (generation and editing) / image guidance (editing) |
 | `MAX_REFINEMENT_ROUNDS` | 3 | Maximum critic-guided regeneration limit *T* |
-| `CRITIC_THRESHOLD` | 0.4 | Alignment threshold, applied to the rescaled CLIP score (cosine similarity + 1) / 2 |
+| `CRITIC_THRESHOLD` | 0.4 | Alignment threshold |
 | `SEED` | 42 | Random seed for generation and editing |
 
 **Hardware.** The experiments in the paper were conducted on a single NVIDIA RTX 6000 Ada Generation GPU (48 GB VRAM). A CUDA-capable GPU is recommended. In the current release, Phi-3 Mini and the Qwen2.5-VL critic are instantiated on the CPU in float32 regardless of `BIOVISGEN_DEVICE`, whereas OmniGen2, CLIP, and the SDXL inpainter use the configured device.
